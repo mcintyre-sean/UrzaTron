@@ -24,7 +24,7 @@ app.post('/new-message', function(req, res) {
   // Remember to use your own API toked instead of the one below  "https://api.telegram.org/bot<your_api_token>/sendMessage"
   axios.post('https://api.telegram.org/bot306932229:AAFcETOj_bEIuzMmzL-DneQ7a_hceXNd2CU/sendMessage', {
     chat_id: message.chat.id,
-    text: 'Yes?'
+    text: 'You rang?'
   })
     .then(response => {
       // We get here if the message was successfully posted
